@@ -1,0 +1,498 @@
+*{margin: 0px;padding: 0px;}
+            /**** body ******/
+body{background-color:#f0f8ff;}
+.container{margin:  auto;width: 80%;background-color: rgb(185 196 227 / 12%);}
+            /**** start header ****/
+.header{background-color:rgb(70 67 67 / 30%);;width: 100%;height: 100px;position: fixed;z-index:1;}
+.header .logo{width: 120px;height: 60px;float:left;background-color: inherit}
+.header .logo img{width: 100%;height: 100%;}
+.header .ul-list{ text-transform: capitalize; margin-top: 15px;font-size: 22px;
+         font-weight: bold;width: 65%;float: right;text-align: right}
+.header .ul-list .activ{text-decoration: underline blue ;}
+.header  li{list-style: none;display: inline-block;margin-left: 15px;}   
+.header .ul-list a{text-decoration: none;color:#5665ad ;}
+.header .ul-list li .borddd{position: relative;}
+.header .ul-list li .bord {position: absolute;top: 71%;left: 65%;
+        background-color: #343b5e;padding: 12px;color: white;visibility: hidden;}
+.header .ul-list li:hover .bord{visibility: visible;}
+            /**** end header ****/    
+            /**** start home ****/
+.home{background-image: url(../img/slide2.jpg);width: 100%;height:100vh;justify-content: center; 
+        background-repeat: no-repeat;background-size: 100% 100%;position: relative;}
+.home .overlay{width: 100%;height: 100%;position: absolute;top: 0;left: 0;
+        background: rgb(0 0 0 / 69%);}
+.home .inside{position: absolute;top: 50%;left: 50%;transform: translate(-50% ,-50%);
+         width: 50%;text-align: center;color: aliceblue;}
+.home .inside h1{ font-family: fantasy;letter-spacing: 6px;font-size: 54px;}
+.home .inside p{letter-spacing: 1px;color: #8088b3f0;}
+.home .inside .button-one{padding: 15px;font-size: 22px;text-transform: capitalize;
+        border-radius: 9px;;margin-top: 20px;position: relative;margin-right: 15px;
+        background-color: transparent;color: cornsilk;border: 1px solid #00000073;}
+.home .inside .overlay-but{position: absolute;background-color: #0000004f;width: 100%;
+        height: 100%; top:0;left:0;visibility: hidden;}
+.home .inside .button-one:hover .overlay-but{visibility: visible;cursor: pointer;}
+.home .inside .button-tow{padding: 15px;font-size: 22px;text-transform: capitalize;
+        border-radius:9px;background-color:#343b5e;border: 0px;margin-top:20px;color:white;}
+.home .inside .button-tow:hover .overlay-but{visibility: visible;cursor: pointer}
+             /**** end home ****/
+/*********************************************************************************************/             
+             /**** start parent Custom ****/
+.custom{width: 100%;height: 400px;margin-top: 55px;background-color: white; 
+        border: 1px #b1acac59 solid;}
+.custom .custom-hr{height: 1px;background-color: blue;border: none;
+        box-shadow: 0px 5px 12px 1px blue; margin-bottom: 14px;}
+.custom .line{height: 2px;width: 60px;margin: auto;background-color: blue;margin-bottom: 15px;}
+.custom h2{padding-top: 24px;text-align: center;}
+              /**** start custom one ****/
+.custom .custom1{width: 25%;border: 1px solid #0000004f;float: left;text-align: center;
+        margin-left: 50px;position: relative;z-index: 1;padding: 10px 10px 20px;}
+.custom1::after{ content: ""; position: absolute; width: 0px;height: 0px; top: 0; left: 0;
+        background-color: black; opacity: .7;transition: .5s;}
+.custom .custom1:hover h1 {color: #899;}
+.custom .custom1:hover::after{ width: 100%; height: 100%;z-index: -1;}   
+.custom .custom1 i{color: #5665ad;font-size: 35px; margin-top:30px;}
+.custom .custom1 p{padding: 14px;font-family: cursive; }
+.custom .custom1:hover p{color:#899;}
+.custom .custom1 a{text-decoration: none;text-transform: capitalize;color: #5665ad;
+    font-weight: bolder;}
+                /**** end Custom one ****/
+                /**** start custom tow ****/
+.custom .custom2{width: 25%;border: 1px solid #0000004f;float: left;text-align: center;
+        margin-left: 20px;position: relative;padding: 10px 10px 20px;z-index: 1;}
+.custom  .custom2::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0; left: 0; background-color: black; opacity: .7;transition: .5s; }
+.custom .custom2:hover::after{ width: 100%; height: 100%;z-index: -1;}
+.custom .custom2:hover h1 {color: #899;}
+.custom2 i{color: #5665ad; font-size: 35px; margin-top:30px;}
+.custom2 p{ padding: 14px; font-family: cursive; }
+.custom2:hover p{color:#899;}
+.custom2 a{text-decoration: none;text-transform: capitalize;color: #5665ad;font-weight: bolder;}
+                /**** end Custom tow ****/
+               /**** start custom three ****/
+.custom .custom3{width: 25%;border: 1px solid #0000004f;float: left;
+        text-align: center;margin-left: 20px;position: relative;padding: 10px 10px 20px;z-index: 1;}
+.custom .custom3::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0; left: 0; background-color: black; opacity: .7;transition: .5s; }
+.custom .custom3:hover::after{ width: 100%; height: 100%;z-index: -1;}
+.custom .custom3:hover h1 {color: #899;}
+.custom3 i{color: #5665ad; font-size: 35px;margin-top:30px;}
+.custom3 p{ padding: 14px;font-family: cursive; }
+.custom3:hover p{color:#899;}
+.custom3 a{text-decoration: none;text-transform: capitalize;color: #5665ad;font-weight: bolder;}
+             /**** end Custom three ****/
+             /**** end parent Custom ****/
+/************************************************************************************************/             
+            /************* start Featured ***********/
+.Featur{height: 630px;margin-top: 35px;background-color: white; border:1px #b1acac59 solid;}
+.Featur:hover i{cursor: pointer;}      
+.Featur .Featur-hr{height: 1px; background-color: orange;border: none;
+        box-shadow: 0px 5px 12px 1px orange;margin-bottom: 14px;}
+.Featur .line{ height: 3px; width: 60px; margin: auto;background-color: orange;border: none;}
+                            /****div1****/
+.Featur .div1{width: 25%;float: left;position: relative;padding: 20px;height: 200px;
+         border: none;margin: 10px 10px 10px 35px}
+.Featur .div1::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0;left: 0;background-color: black; opacity: .7;}
+.div1:hover::after{ width: 100%; height: 100%;}
+.Featur .div1 .hov{ width: 70%;text-align: center; position: absolute;
+        transform: translate(-50%, -50%);left: 50%;top: 50%;z-index: 1;visibility: hidden;
+        text-align: center;}
+.Featur .div1:hover .hov{visibility: visible;transition: 2;}
+.Featur .div1 .hov h3{ color:#5665ad;font-size: 16px;padding:10px;text-transform: uppercase;}
+.Featur .div1 .hov p{color: white; padding: 6px}
+.Featur .div1 .hov i{ font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}
+.Featur h2{padding-top: 24px;  text-align: center;}
+.Featur .div1  img{width: 100%;}
+                        /*****div2*****/   
+.Featur .div2{width: 25%;float: left;margin-bottom: 20px;position: relative;
+        padding: 20px;height: 200px;border: none; margin-top: 10px;}
+.div2::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0;left: 0;background-color: black; opacity: .7;}
+.div2:hover::after{ width: 100%; height: 100%;}
+.Featur .div2 .hov{ width: 70%;position: absolute;transform: translate(-50%, -50%);
+        left: 50%;top: 50%;z-index: 1;visibility: hidden;text-align: center;}
+.Featur .div2:hover .hov{visibility: visible;transition: 2;}
+.Featur .div2 .hov h3{color: #5665ad;font-size: 16px;padding: 10px;text-transform: uppercase;}
+.Featur .div2 .hov p{color: white;padding: 6px}
+.Featur .div2 .hov i{ font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}
+.Featur h2{padding-top: 24px; text-align: center;}
+.Featur .div2  img{width: 100%;}
+                        /*****div3*****/
+.Featur .div3{width: 25%;float: left;margin-bottom: 20px;position: relative;
+        padding: 20px;height: 200px;border: none; margin-top: 10px;}
+.div3::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0;left: 0;background-color: black; opacity: .7; }
+.div3:hover::after{ width: 100%; height: 100%;}
+.Featur .div3 .hov{ width:70%;text-align:center;position:absolute;transform: translate(-50%, -50%);
+        left: 50%;top: 50%;z-index: 1;visibility: hidden;text-align: center;}
+.Featur .div3:hover .hov{visibility: visible;transition: 2;}
+.Featur .div3 .hov h3{color: #5665ad;font-size: 16px;padding: 10px;text-transform: uppercase;}
+.Featur .div3 .hov p{color: white; padding: 6px}
+.Featur .div3 .hov i{font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}
+.Featur h2{padding-top: 24px;  text-align: center;}
+.Featur .div3  img{width: 100%;}
+                            /****div4*****/
+.Featur .div4{width: 25%;float: left;position: relative;padding: 20px;height: 200px;border: none;
+        margin: 10px 10px 20px 35px;text-align: center;}
+.div4::after{ content: ""; position: absolute; width: 0px;height: 0px; top: 0;left: 0;
+        background-color: black; opacity: .7;}
+.div4:hover::after{ width: 100%; height: 100%;}
+.Featur .div4 .hov{ width: 70%;position: absolute;transform: translate(-50%, -50%);left: 50%;
+        top: 50%;z-index: 1;visibility: hidden;}
+.Featur .div4:hover .hov{visibility: visible;transition: 2;}
+.Featur .div4 .hov h3{color: #5665ad;font-size: 16px;padding: 10px;text-transform: uppercase;}
+.Featur .div4 .hov p{color: white; padding: 6px}
+.Featur .div4 .hov i{font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}
+.Featur h2{padding-top: 24px;text-align: center;}
+.Featur .div4  img{width: 100%;}
+                        /******div5******/
+.Featur .div5{width: 25%;float: left;position: relative;padding: 20px;height: 200px;border: none;
+         margin: 10px 4px 20px;text-align: center;}
+.div5::after{ content: ""; position: absolute; width: 0px;height: 0px; top: 0;left: 0;
+        background-color: black; opacity: .7;}
+.div5:hover::after{ width: 100%; height: 100%;}
+.Featur .div5 .hov{ width: 70%; position: absolute;transform: translate(-50%, -50%);left: 50%;
+        top: 50%;z-index: 1;visibility: hidden;}
+.Featur .div5:hover .hov{visibility: visible;transition: 2;}
+.Featur .div5 .hov h3{ color: #5665ad;font-size: 16px;padding: 10px; text-transform: uppercase;}
+.Featur .div5 .hov p{color: white; padding: 6px}
+.Featur .div5 .hov i{font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}
+.Featur h2{padding-top: 24px;  text-align: center;}
+.Featur .div5  img{width: 100%;}
+                    /******div6*******/
+.Featur .div6{width: 25%;float: left;position: relative;padding: 20px;height: 200px;border: none;
+        margin: 10px 0px 20px; text-align: center;}
+.div6::after{ content: ""; position: absolute; width: 0px;
+        height: 0px; top: 0;left: 0;background-color: black; opacity: .7;}
+.div6:hover::after{ width: 100%; height: 100%;}
+.Featur .div6 .hov{ width: 70%;position: absolute;transform: translate(-50%, -50%);left: 50%;
+        top: 50%;z-index: 1;visibility: hidden;}
+.Featur .div6:hover .hov{visibility: visible;transition: 2;}
+.Featur .div6 .hov h3{color: #5665ad;font-size: 16px;padding: 10px; text-transform: uppercase;}
+.Featur .div6 .hov p{color: white; padding: 6px}
+.Featur .div6 .hov i{ font-size: 25px;color: #320072;padding: 10px;background-color: #5665ad;}   
+.Featur h2{padding-top: 24px;  text-align: center;}
+.Featur .div6  img{width: 100%;}
+                 /*************end Featured **************/
+/*******************************************************************************************/                 
+                 /***********start offer **********/
+.offer{height: 900px;background-color: white;border: 1px #b1acac59 solid;margin-top: 55px;}
+.offer .title2{margin: 30px 0px 25px;text-align: center;}
+.offer .title2 hr{width: 52px;margin: auto;height: 3px;background-color:#50abf3;border: none;}
+.offer .offer-hr{height: 1px;background-color: #2f7cdb;border: none;
+    box-shadow: 0px 5px 12px 1px #2f7cdb;margin-bottom: 14px;}
+                        /******start app*****/
+.offer .app{width: 22%;border: 1px solid #0000ff29;padding: 21px 17px 26px 51px;
+       position: relative;z-index: 1;float: left;}
+.offer .app i{position: absolute;left: 8px;font-size: 37px;color: #50abf3;}
+.offer .app h3{font-size: 32px; font-family: serif;}
+.offer .app:hover h3{color: white;}
+.offer .app p{ padding: 25px 0px 22px 0px;font-size: 22px; color: #0000008c;}
+.offer .app:hover p{color:rgb(118, 129, 111)}
+.app::after{content: "";position: absolute;width: 0;height: 0;top: 0;left: 0;
+        background-color: black;opacity: 0.7;transition: 1s;}
+.app:hover::after{width: 100%;height: 100%;z-index: -1;}
+                    /******end app********/
+                    /*****start design*****/
+.offer .design{width: 22%;border: 1px solid #0000ff29;padding: 21px 17px 26px 51px;
+        position: relative;z-index: 1;float: left;margin-left: 31px;}
+.offer .design i{position: absolute;left: 8px;font-size: 37px;color: #50abf3;}
+.offer .design h3{font-size: 32px; font-family: serif;}
+.offer .design:hover h3{color: white;}
+.offer .design p{ padding: 25px 0px 22px 0px;font-size: 22px;color: #0000008c;}
+.offer .design:hover p{color:rgb(118, 129, 111)}
+.design::after{content: "";position: absolute;width: 0;height: 0;top: 0;left: 0;
+        background-color: black;opacity: 0.7;transition: 1s;}
+.design:hover::after{width: 100%;height: 100%;z-index: -1;}
+                    /********end design********/
+                    /*****start idea *********/
+.offer .idea{width: 22%;border: 1px solid #0000ff29;padding: 21px 17px 26px 51px;
+        position: relative;z-index: 1;float: left;margin-left: 31px;}
+.offer .idea i{position: absolute;left: 4px;font-size: 37px; color: #50abf3;}
+.offer .idea h3{font-size: 27px;    font-family: serif;}
+.offer .idea:hover h3{color: white;}
+.offer .idea p{ padding: 25px 0px 22px 0px;font-size: 22px;color: #0000008c;}
+.offer .idea:hover p{color:rgb(118, 129, 111)}
+.idea::after{content: ""; position: absolute;width: 0;height: 0;top: 0;left: 0;
+        background-color: black;opacity: 0.7;transition: 1s;}
+.idea:hover::after{width: 100%;height: 100%;z-index: -1;}
+                    /***** end idea********/
+                    /***** start market *****/
+.offer .market{width: 22%;border: 1px solid #0000ff29;padding: 21px 17px 26px 51px;
+        position: relative;z-index: 1;float: right;margin-left: 31px; margin-top: 25px;}
+.offer .market i{position: absolute;left: 4px;font-size: 37px;color: #50abf3;}
+.offer .market h3{font-size: 27px;font-family: serif;}
+.offer .market:hover h3{color: white;}
+.offer .market p{ padding: 25px 0px 22px 0px;font-size: 22px;color: #0000008c;}
+.offer .market:hover p{color:rgb(118, 129, 111)}
+.market::after{content: "";position: absolute;width: 0;height: 0;top: 0;left: 0;
+        background-color: black;opacity: 0.7;transition: 1s;}
+.market:hover::after{width: 100%;height: 85%;z-index: -1;}
+                    /***end market *******/
+                    /**** start support ***/
+.offer .support{width:22%;border: 1px solid #0000ff29;padding:21px 17px 26px 51px;position:relative;
+     z-index: 1;float: right;margin-left: 31px; margin-top: 25px;float: left;margin-top: 31%;}
+.offer .support i{position: absolute;left: 4px;font-size: 37px; color: #50abf3;}
+.offer .support h3{font-size: 27px; font-family: serif;}
+.offer .support:hover h3{color: #fff;transition: .7s;}
+.offer .support p{ padding: 25px 0px 22px 0px;font-size: 22px;color: #0000008c;}
+                    /**** end support ****/
+                    /***** start brand *****/
+.offer .brand{width: 22%;border: 1px solid #0000ff29;padding: 21px 17px 26px 51px;
+        position: relative;margin-left: 31px;float: left;margin-top: 5%;}
+.offer .brand i{position: absolute;left: 4px;font-size: 37px;color: #50abf3;}
+.offer .brand h3{font-size: 27px;font-family: serif;width: 90px;}
+.offer .brand:hover h3{color: #fff;transition: .7s}
+.offer .brand p{ padding: 25px 0px 22px 0px;font-size: 22px; color: #0000008c;}
+                        /***** end brand *****/
+                /************* end offer ***********/
+/*****************************************************************************************/  
+                /*********** start choose *********/
+.choose{height: 400px;padding: 20px;background-color: white;border: 1px #b1acac59 solid;
+        margin-top: 55px;}
+.choose .why{float: left;width: 50%;position: relative;}
+.choose .why hr{ width: 60px;background-color: #64b9f6;height: 3px;
+        border: none;margin-top: -15px;}
+.choose .why p{ margin-top: 43px;font-size: 21px;color: #00000073;margin-bottom: 40px;}
+.choose .why li{margin-left: 30px;list-style: none;color: #00000073; font-size: 18px;
+        padding-bottom: 10px;}
+.choose .why i{position: absolute; left: 0px; border: 1px solid; border-radius: 50%;
+        color: #50abf3;}
+                        /*************/
+.choose .image-why{ width: 45%;float: left;margin-left: 36px; margin-top: 20px;}
+.choose .image-why img{ width: 100%;height: 75%;}
+.choose .ul-why{ margin: 23px 0px 0px 150px;list-style: none;}
+.choose .ul-why li{float: left;margin-left: 5px;}
+.choose .ul-why .icon-one{background-color: #65abf3;color: #65abf3;border-radius: 50%;}
+.choose .ul-why i{background-color:gray;color:gray;border-radius: 50%;}
+.choose .ul-why li:hover i{background-color: #65abf3;color: #65abf3;} 
+                /********** end choose ************/
+/***********************************************************************************************/                
+                /********* start light ************/
+.light{height: 400px;background-image: url(../img/im.webp);
+        background-attachment: fixed; background-size: cover;margin-top: 55px;}
+.light .overlay{background-color: #000000ad;height: 100%;}
+.light .number{padding-top: 150px;margin-left: 14%;}
+.light i{ color: #6195ff;font-size: 40px;padding-bottom: 12px;}
+.light .num1{float: left; text-align: center; font-size: 18px;color: white; padding: 0px 30px;}
+.light .num2{ float: left;text-align: center;font-size: 18px;color: white;
+        padding: 0px 30px;margin-left: 50px;}
+.light .num3{ float: left;text-align: center;font-size: 18px;color: white;
+        padding: 0px 30px;margin-left: 50px;}
+.light .num4{ float: left; text-align: center;font-size: 18px;
+        color: white;padding: 0px 30px;margin-left: 30px}
+                /*********end light **********/
+/***********************************************************************************************/                
+                /******** start parent basic*******/
+.parent{margin-top: 55px;border: 1px #b1acac59 solid;height: 500px;background-color: white;}
+.parent .line-parent{height: 1px; background-color: #02102a;border: none;
+     box-shadow: 0px 5px 12px 1px #02102a;margin-bottom: 14px;}
+.parent .title-parent{margin-bottom: 20px;}
+.parent .title-parent h1{    margin-bottom: 10px;text-align: center;}
+.parent .title-parent hr{width: 60px;height: 3px;background-color: #02102a;border: none;
+    margin: auto;}         
+                        /*****start basic-one*****/
+.parent .basic-one{float: left;margin-left: 15px;width: 30%; border: 2px solid #00000045;
+    text-align: center;height: 365px;position: relative;z-index: 1;}
+.parent .basic-one::after{content: "";position: absolute;width: 100%;height: 0;
+        top: 0;left: 0;transition: 1s;opacity: .8;background-color: #02102a;z-index: -1;}
+.parent .basic-one:hover::after{width: 100%;height: 100%;}    
+.parent .basic-one h3{text-transform: uppercase;padding: 23px;color: #0000008a;}
+.parent .basic-one .dollar{border-radius: 50%;border: solid #101c60 1px; width: 109px; margin: auto}
+.parent .basic-one:hover  h4{color: white;}     
+.parent .basic-one:hover .dollar p{color: white;} 
+.parent .basic-one h4{ font-size: 50px;margin: 7px 0px 0px;font-family: fangsong;}
+.parent .basic-one .dollar p {color: black;font-size: 20px;padding-bottom: 8px;}
+.parent .basic-one .detail{color: #0000008a;padding: 23px 7px 27px;font-size: 25px;}
+.parent .basic-one button{padding: 7px; margin-bottom: 16px; border: #101c60 solid 1px ;}
+.parent .basic-one button:hover{border-radius: 100px;background-color:#11152ca6;
+    border: solid 1px;color: white;font-size: 15px;}
+                        /*****end basic-one******/
+                        /*****start basic-tow*****/
+.parent .basic-tow{float: left;margin-left: 20px;width: 30%;border: 2px solid #00000045;
+    text-align: center;height: 365px;position: relative;z-index: 1;}
+    .parent .basic-tow::after{content: "";position: absolute;width: 100%;height: 0;
+        top: 0;left: 0;transition: 1s;opacity: .8;background-color: #02102a;z-index: -1;}
+    .parent .basic-tow:hover::after{width: 100%;height: 100%;}    
+.parent .basic-tow h3{text-transform: uppercase;padding: 23px;color: #0000008a;}
+.parent .basic-tow .dollar{border-radius: 50%;border: solid #101c60 1px;width: 109px;margin: auto;}
+.parent .basic-tow:hover  h4{color: white;}     
+.parent .basic-tow:hover .dollar p{color: white;} 
+.parent .basic-tow h4{font-size: 50px;margin: 7px 0px 0px;font-family: fangsong;}
+.parent .basic-tow .dollar p { color: black;font-size: 20px;padding-bottom: 8px;}
+.parent .basic-tow .detail{color: #0000008a; padding: 23px 7px 27px;font-size: 25px;}
+.parent .basic-tow button{padding: 7px; margin-bottom: 16px;border: #101c60 solid 1px ;}
+.parent .basic-tow button:hover{border-radius: 100px;background-color:#11152ca6;
+    border:  solid 1px;color: white;font-size: 15px;}
+                         /*********end basic-tow*********/
+                        /*********start basic-three*******/
+.parent .basic-three{float: left;margin-left: 20px;width: 30%; border: 2px solid #00000045;
+    text-align: center;height: 365px;position: relative;z-index: 1;}
+.parent .basic-three::after{content: "";position: absolute;width: 100%;height: 0;
+    top: 0;left: 0;transition: 1s;opacity: .8;background-color:#02102a;z-index: -1;}
+.parent .basic-three:hover::after{width: 100%;height: 100%;}
+.parent .basic-three h3{text-transform: uppercase;padding: 23px;color: #0000008a;}
+.parent .basic-three .dollar{border-radius: 50%;border: solid #101c60 1px;width: 109px;
+        margin: auto;;}
+.parent .basic-three:hover  h4{color: white;}     
+.parent .basic-three:hover .dollar p{color: white;}   
+.parent .basic-three h4{ font-size: 50px; margin: 7px 0px 0px;font-family: fangsong;}
+.parent .basic-three .dollar p { color: black;font-size: 20px;padding-bottom: 8px;}
+.parent .basic-three .detail{color: #0000008a;padding: 23px 7px 27px;font-size: 25px;}
+.parent .basic-three button{padding: 7px; margin-bottom: 16px;border: #101c60 solid 1px ;}
+.parent .basic-three button:hover{border-radius: 100px; background-color:#11152ca6;
+        border:  solid 1px;color: white;font-size: 15px;}
+                          /*******end basic-three******/
+                     /********* end parent basic**********/
+ /**************************************************************************************/
+                        /*****etart light2*****/                    
+.light2{height: 400px;background-image: url(../img/ImageForArticl.webp);background-size:cover;
+        background-attachment: fixed;margin-top: 55px;}
+.light2 .overlay{background-color: #000000ad;height: 100%;}
+.light2 .lift-div{float: left;width: 32%;padding: 10px;color: white;padding-top:115px;
+            margin:0px 98px;}
+.light2 .lift-div .img-lift{    padding: 21px 10px 0px;}
+.light2 .lift-div .img-div{display: flex;padding-bottom: 15px;}
+.light2 .lift-div  img{ width: 80px;border-radius: 50%;height: 80px;}
+.light2 .lift-div .img-lift h4{font-size: 22px;padding-bottom: 4px;text-transform: capitalize;
+        color: #c1c4d9}
+.light2 .lift-div .img-lift span{color: #50abf3;font-size: 16px;margin-left: 16px;}
+.light2 .lift-div p{ font-family: fangsong;color: #c1c4d9;}
+                             /************/
+.light2 .right-div{float: left;width: 32%;padding: 10px;color: white;padding-top: 115px; }
+.light2 .right-div .img-right{padding: 21px 10px 0px;}
+.light2 .right-div .img-div{display: flex;padding-bottom: 20px;}
+.light2 .right-div  img{ width: 80px;border-radius: 50%;height: 80px;}
+.light2 .right-div .img-right h4{font-size: 22px;padding-bottom: 4px;text-transform: capitalize;
+         color: #c1c4d9}
+.light2 .right-div .img-right span{color: #50abf3;font-size: 16px; margin-left: 16px;}
+.light2 .right-div p{  font-family: fangsong;color: #c1c4d9}
+                    /**** end light2 ******/
+ /******************************************************************************************/      
+                          /****** start team ***********/
+.team-parent{height: 400px;;background-color: white;
+        border:1px #b1acac59 solid ;margin-top: 55px;}
+.team-parent .team-hr{height: 1px; background-color: #afb1b9eb; border: none;
+     box-shadow: 0px 4px 8px 3px #afb1b9eb;margin-bottom: 14px;}
+.team-parent h1{text-align: center;margin-bottom: 4px;}    
+.team-parent .title hr{width: 63px;height: 3px;background-color: #afb1b9eb;border: none;margin: auto;}    
+.team-one {float: left;width: 25%;margin: 20px 10px 10px 40px;padding: 10px;
+        position: relative;text-align: center;background-color: #afb1b9eb;height: 269px;}
+.team-one .in{width: 85%;margin: auto;position: relative;height: 200px;}
+.team-one .in img{width:100%;height: 100%;}
+.team-one .lay{ background-color:rgb(107 104 104 / 42%);position: absolute;
+    height: 100%;width: 100%;top: 0;opacity: .4;visibility: hidden;}
+.team-one:hover .lay{visibility: visible;}
+.team-one:hover .lay i{z-index: 1;}
+.team-one .lay i{color: white; background-color: #0942e5;display: block;width: 41px;
+        font-size: 24px;line-height: 2;margin-left: auto;}
+.team-parent .team-one::after{content: "";position: absolute;background-color: #00000091;
+        width:100%;height: 0;top: 0;left: 0;transition: 1s;opacity: .3;}
+.team-parent .team-one:hover::after{width: 100%;height: 100%;}
+.team-one .rr{ padding: 12px;}
+.team-one h4{ font-size: 24px;text-transform: uppercase;color: #0b2032;}
+.team-one:hover h4{color: rgb(107, 102, 102);transition: 1.5s;}
+.team-one span{  font-size: 15px;  color: #50abe7;}
+.team-one:hover span{color: blue;transition: 1.5s;}
+                            /*********/
+.team-tow {float: left;width: 25%;margin: 20px 10px 10px 20px;padding: 10px;
+        position: relative;text-align: center;background-color:#afb1b9eb;height: 269px;}
+.team-tow .in{width: 85%; margin: auto;position: relative;height: 200px;}
+.team-tow .in img{width:100%;height: 100%;}
+.team-tow .lay{ background-color:rgb(107 104 104 / 42%);position: absolute;
+    height: 100%;width: 100%;top: 0; opacity: .4;visibility: hidden;}
+.team-tow:hover .lay{visibility: visible;}
+.team-tow:hover .lay i{z-index: 1;}
+.team-tow .lay i{color: white;background-color: #0942e5; display: block;width: 41px;
+        font-size: 24px;line-height: 2;margin-left: auto;}
+.team-parent .team-tow::after{content: "";position: absolute;background-color: #00000091;
+    width:100%;height: 0;top: 0;left: 0;transition: 1s;opacity: .3;}
+.team-parent .team-tow:hover::after{width: 100%;height: 100%;}
+.team-tow .rr{ padding: 12px;}
+.team-tow h4{   font-size: 24px; text-transform: uppercase;color: #0b2032;}
+.team-tow:hover h4{color: rgb(107, 102, 102);transition: 1.5s;}
+.team-tow span{  font-size: 15px;color: #50abe7;}
+.team-tow:hover span{color: blue;transition: 1.5s;}
+                            /***********/
+.team-three {float: left;width: 25%;margin: 20px 10px 10px 20px;padding: 10px;
+        position: relative;text-align: center;background-color: #afb1b9eb;}
+.team-three .in{width: 85%; margin: auto;position: relative;}
+.team-three .in img{width:100%;}
+.team-three .lay{ background-color:rgb(107 104 104 / 42%);
+        position: absolute;height: 100%;width: 100%;top: 0;opacity: .4;visibility: hidden;}
+.team-three:hover .lay{visibility: visible;}
+.team-three:hover .lay i{z-index: 1;}
+.team-three .lay i{color: white; background-color: #0942e5;display: block;width: 41px;
+        font-size: 24px;line-height: 2;margin-left: auto;}
+.team-parent .team-three::after{content: "";position: absolute;background-color: #00000091;
+    width:100%;height: 0;top: 0;left: 0;transition: 1s;opacity: .3;}
+.team-parent .team-three:hover::after{width: 100%;height: 100%;}
+.team-three .rr{ padding: 12px;}
+.team-three h4{ text-transform: uppercase; font-size: 24px;color: #0b2032;}
+.team-three:hover h4{color: rgb(107, 102, 102);transition: 1.5s;}
+.team-three span{ font-size: 15px; color: #50abe7;}
+.team-three:hover span{color: blue;transition: 1.5s;}
+                        /***** end team *****/
+ /**************************************************************************************/
+                    /********start per2********/
+.per2 {height: 600px;margin-top: 55px; border:1px #b1acac59 solid ;background-color: white;}                    
+.per2  .title2{text-align: center;padding-top: 35px;}
+.per2  .title2 h2{margin-bottom: 0px;text-transform: capitalize;}
+.per2  .title2  hr{ height: 3px; background-color: #50abf3;width: 65px;margin: auto;
+        margin-top: 7px;border: none;}
+.per2  .title2 h2{  font-family: sans-serif;font-size: 33px;}
+.per2 .pic1{width: 24%; margin-left: 63px;border: 0px solid;float: left;
+         margin-top: 40px;padding: 0px 10px;background-color: #c1baba1f;}
+.per2 .pic1 .img2{width: 65%; height: 20%;margin-left: 14px;margin: auto;}
+.per2 .pic1 img{width: 100%; height: 100%;}
+.per2 .pic1 .icon{margin-top: 10px;}
+.per2 .pic1:hover .icon i{color: rgb(9, 107, 219);}
+.per2 .pic1 .icon i{color: #2196f3c9;margin-left: 15px;font-size: 10px;}
+.per2 .pic1 h3{font-size: 15px;margin: 13px 0px 0px 12px;}
+.per2 .pic1 p{font-size: 13px;color: #0000009e;text-align: start;margin-left: 12px;
+        padding: 15px 2px;}
+.per2 .pic1 h5{margin-left: 12px;text-transform: capitalize;padding: 8px 0px 32px;}
+.per2 .pic1 h5 a{color: #2196f3c9;text-decoration: none}
+.per2 .pic1:hover a{color: white;}
+                           /*end pic1*/                          
+                            /*start pic2*/
+.per2 .pic2{width: 24%; margin-left: 20px;border: 0px solid;
+         float: left;margin-top: 40px;padding: 0px 10px;background-color: #c1baba1f;}
+.per2 .pic2 .img2{width: 65%; height: 20%;margin-left: 14px;margin: auto;}
+.per2 .pic2 img{    width: 100%;height: 100%;}
+.per2 .pic2 .icon{margin-top: 10px;}
+.per2 .pic2 .icon i{color: #2196f3c9;margin-left: 15px;font-size: 10px;}
+.per2 .pic2:hover .icon i{color: rgb(9, 107, 219);}
+.per2 .pic2 h3{margin: 13px 0px 0px 12px;;font-size: 15px}
+.per2 .pic2 p{font-size: 13px;color: #0000009e;text-align: start;margin-left: 12px;
+        padding: 15px 2px}
+.per2 .pic2 h5{margin-left: 12px;text-transform: capitalize;    padding: 8px 0px 32px;}
+.per2 .pic2 h5 a{color: #2196f3c9;text-decoration: none}
+.per2 .pic2:hover a{color: white;}
+                        /*end pic2*/                        
+                        /*start pic3*/
+.per2 .pic3{width: 24%; margin-left: 20px; border: 0px solid;float: left;
+        margin-top: 40px;padding: 0px 10px;background-color: #c1baba1f;}
+.per2 .pic3 .img2{width: 65%;height: 20%;margin-left: 14px;margin: auto;}
+.per2 .pic3 img{    width: 100%;height: 100%;}
+.per2 .pic3 .icon{margin-top: 10px;}
+.per2 .pic3 .icon i{color: #2196f3c9;margin-left: 15px;font-size: 10px;}
+.per2 .pic3:hover .icon i{color: rgb(9, 107, 219);}
+.per2 .pic3 h3{margin: 13px 0px 0px 12px;;font-size: 15px}
+.per2 .pic3 p{font-size: 13px;color:#0000009e;text-align: start;margin-left:12px;padding: 15px 2px}
+.per2 .pic3 h5{margin-left: 12px;text-transform: capitalize;padding: 8px 0px 32px}
+.per2 .pic3 h5 a{color: #2196f3c9;text-decoration:none}
+.per2 .pic3:hover a{color: white;}
+                           /*end pic3*/                        
+                         /*end per2*/
+/*****************************************************************************************/  
+                    /*********** start contant***************/
+.contant{background-color: rgb(7 18 78);height: 400px;text-align: center;}
+.contant .img-contant img{padding-top: 50px;height: 199px;}
+.contant  p{color: #726363;font-size: 13px;text-transform: uppercase;padding-top: 25px;}
+.contant .icon-contant{margin-top: 40px;}
+.contant .icon-contant i{border-radius: 50%;background-color: #128beb;width: 51px;
+    height: 32px;padding-top: 11px;   }
+.contant .icon-contant a{color: wheat;font-size: 24px;margin-left: 8px;}
+.contant .icon-contant a:hover i{background-color: #0942e5;} 
+                    /*********** end contant **************/
